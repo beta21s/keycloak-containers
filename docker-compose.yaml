@@ -1,11 +1,15 @@
 version: '3'
 
+volumes:
+  mysqlData:
+      driver: local
+
 services:
   mysql:
       image: mysql:5.7
       restart: always
       volumes:
-        - ./data:/var/lib/mysql
+        - mysqlData:/var/lib/mysql
       environment:
         MYSQL_ROOT_PASSWORD: root
         MYSQL_DATABASE: keycloak
