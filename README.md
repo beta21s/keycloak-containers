@@ -1,5 +1,11 @@
 ### Cấu hình
 
+#### Logout
+
+```
+https://keycloak.discourse.group/t/keycloak-18-legacy-backward-logout-compatibility-option/15918
+```
+
 #### Cấu hình Docker
 
 ```
