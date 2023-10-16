@@ -6,6 +6,18 @@
 https://keycloak.discourse.group/t/keycloak-18-legacy-backward-logout-compatibility-option/15918
 ```
 
+``` standalone(-ha).xml in the keycloak-server```
+
+```
+<spi name="login-protocol">
+  <provider name="openid-connect" enabled="true">
+    <properties>
+      <property name="legacy-logout-redirect-uri" value="true"/>
+    </properties>
+  </provider>
+</spi>
+```
+
 #### Cấu hình Docker
 
 ```
